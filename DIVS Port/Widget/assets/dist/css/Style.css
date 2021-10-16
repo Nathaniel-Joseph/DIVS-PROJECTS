@@ -1,0 +1,338 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+/* body */
+body {
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: .2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection{
+    background-color: #ffdc00 !important;
+    color: #000;
+}
+
+body.dark-th{
+    background-color: #171c28;
+    transition: .2s;
+}
+
+body.dark-th .text-dark{
+    color: #fff !important;
+    transition: .2s;
+}
+
+body.dark-th .text-muted{
+    color: rgba(255, 255, 255, 0.527) !important;
+    transition: .2s;
+}
+
+body.dark-th .highlight-link:hover{
+    color: #fff !important;
+}
+
+body.dark-th .highlight-link2::after{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,transform .3s;
+    transition: height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+body.dark-th .highlight-link2:hover::after{
+    height: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+}
+
+.text-dark{
+    transition: .2s;
+}
+
+.text-muted{
+    transition: .2s;
+}
+
+.mt-5{
+    margin-top: 70px !important;
+}
+
+/* header */
+header > .container-fluid{
+    margin-left: 90%;
+}
+
+/* toggle */
+.toggle-th{
+    padding: 4px;
+    background-color: #777;
+    border-radius: 50px;
+    width: 4%;
+    height: 27px;
+    position: relative;
+    /* margin-left: 94%; */
+    transition: .2s;
+    cursor: pointer;
+}
+
+.bg-green{
+    background-color: #bae67e;
+}
+
+.toggle-bl{
+    padding: 10px;
+    position: absolute;
+    border-radius: 50px;
+    background-color: #fff;
+    transition: .5s  ease-in-out;
+}
+
+.clicked-bl{
+    transition: .4s ease-in-out;
+    left: 55%;
+}
+
+.landing > .col-md-8 > div > h1{
+    font-weight: 300;
+}
+
+.landing > .col-md-8 > div > h1 > img:hover{
+    cursor: pointer;
+    animation: wave 2.5s infinite;
+}
+
+.landing > .col-md-8 > div > div > p{
+    font-size: 2.5rem;
+}
+
+.landing > .col-md-8 > div > div > span{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.highlight-link{
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 3px;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 -3px 0 #007bff;
+    box-shadow: inset 0 -3px 0 #007bff;
+}
+
+.highlight-link:hover{
+    -webkit-box-shadow: inset 0 -33px 0 0 #007bff;
+    box-shadow: inset 0 -33px 0 0 #007bff;
+    color: #fff !important;
+}
+
+.highlight-link2{
+    position: relative;
+    display: inline-block;
+}
+
+.highlight-link2::after{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #36363c;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,transform .3s;
+    transition: height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+.highlight-link2:hover::after{
+    height: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+}
+
+.highlight-link2:focus::after{
+    height: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+}
+
+/* background */
+.background{
+    margin-top: 10%;
+}
+
+/* skills */
+.skills{
+    margin-top: 10%;
+}
+
+/* exp */
+.exp{
+    margin-top: 10%;
+}
+
+.exp .date{
+    font-size: .9rem;
+}
+
+/* projects */
+.projects{
+    margin-top: 10%;
+}
+
+.project-info{
+    font-size: .8rem;
+}
+
+.project2{
+    margin-top: 10%;
+}
+
+.pro-link{
+    transition: .4s ease-in-out;
+}
+
+.text{
+    transition: .2s ease-in-out;
+}
+
+.pro-link:hover .text{
+    margin-right: 9px;
+}
+
+.badge{
+    padding: 7px;
+    font-size: .9rem;
+    font-weight: 500 !important;
+    background-color: transparent !important;
+}
+
+/* footer */
+footer{
+    margin-top: 8%;
+}
+
+.highlight-link3{
+    position: relative;
+    display: inline-block;
+}
+
+.highlight-link3::after{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #0d6efd;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,transform .3s;
+    transition: height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+.highlight-link3:hover::after{
+    height: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+}
+
+.highlight-link3:focus::after{
+    height: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+}
+
+/* @keyframe */
+@keyframes wave {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+@media (max-width: 375px) {
+    .toggle-th{
+        width: 15%;
+    }
+
+    .row{
+        display: flex !important;
+    }
+    
+    html{
+        overflow-x: hidden;
+    }
+
+    /* header */
+    header > .container-fluid{
+        margin-left: 70%;
+    }
+
+    .landing > .col-md-8 > div > div > p{
+        font-size: 1.5rem;
+    }
+
+    .landing > .col-md-8 > div > div > span{
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+
+    .landing > .col-md-8 > div > div > a{
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+
+    .landing > .col-md-8 > div > div > img{
+        width: 7%;
+    }
+
+    /* background */
+    .background{
+        margin-top: 25%;
+    }
+
+    .background .col-md-3 .text-primary{
+        text-align: left !important;
+        font-size: 1.3rem;
+    }
+}
